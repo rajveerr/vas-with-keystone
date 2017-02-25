@@ -1,5 +1,9 @@
 <ul>
   {{# each products}}
-    <li>{{{title}}}</li>
+    <li>
+      <h2>{{{title}}}</h2>
+      <p>{{{shortDescription}}}</p>
+      <a href='{{productUrl slug}}'>Read more</a>
+    </li>
   {{/each}}
 </ul>
