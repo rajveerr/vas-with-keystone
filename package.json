@@ -6,6 +6,10 @@
     "keystone": "^4.0.0-beta.5",
     "async": "^2.1.5",
     "lodash": "^4.13.1",
+    "moment": "^2.10.6",
+    "cloudinary": "^1.2.4",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.5",
     "node-sass": "^4.5.0",
     "node-sass-middleware": "^0.11.0", 
     "dotenv": "^4.0.0"
