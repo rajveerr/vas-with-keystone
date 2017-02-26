@@ -1,0 +1,79 @@
+/* Vendor Dependencies */
+@import "./node_modules/bourbon/app/assets/stylesheets/bourbon";
+@import "grid-settings";
+@import "./node_modules/bourbon-neat/app/assets/stylesheets/neat";
+
+
+
+/* Authored Dependencies */
+@import "utilities/reset";
+@import "utilities/mixins";
+@import "utilities/variables";
+@import "utilities/media-queries";
+@import "utilities/grids";
+
+/* Atoms */
+@import "atoms/card";
+@import "atoms/texts";
+@import "atoms/headings";
+@import "atoms/inputs";
+@import "atoms/radio-and-checkbox";
+@import "atoms/select";
+@import "atoms/buttons";
+@import "atoms/links";
+@import "atoms/lists";
+@import "atoms/preloader";
+@import "atoms/spinner";
+
+/* Molecules */
+@import "molecules/table";
+@import "molecules/input-and-button";
+@import "molecules/flashes";
+@import "molecules/dialog";
+
+
+/* Organisms */
+@import "organisms/header";
+@import "organisms/forms";
+
+/* Templates */
+@import "templates/default-layout";
+
+/* Pages */
+@import "pages/agent-verify";
+@import "pages/agent-welcome";
+@import "pages/agent-dashboard";
+@import "pages/employer-dashboard";
+
+/* Icons */
+@import "molecules/icons";
+
+
+/* Master Styles */
+
+html,
+body {
+	height: 100%;
+	max-height: 100%;
+	display: block;
+	overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body,
+.wrapper,
+#content {
+  position: relative;
+	overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

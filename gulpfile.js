@@ -1,4 +1,8 @@
-var gulp = require('gulp');
+var gulp = require('gulp'),
+		bourbon = require("node-bourbon").includePaths,
+		neat = require("node-neat").includePaths;
+
+
 var watch = require('gulp-watch');
 var shell = require('gulp-shell')
 
@@ -23,6 +27,11 @@ gulp.task('watch:sass', function () {
 
 gulp.task('sass', function(){
 	gulp.src(paths.style.all)
+		.pipe(sass({
+			includePaths: require('node-bourbon').includePaths,
+      style: 'compressed',
+      quiet: true
+		}))
 		.pipe(sass().on('error', sass.logError))
 		.pipe(gulp.dest(paths.style.output));
 });
